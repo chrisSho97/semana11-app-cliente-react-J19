@@ -1,8 +1,9 @@
 @server = https://cuddly-computing-machine-9pg76w7qgr9f7j9j-8080.app.github.dev
 ###
-GET {{server}}/api/employees 
+GET {{server}}/api/instrumentos 
 ###
-POST {{server}}/api/employees
+
+POST {{server}}/api/instrumentos
 Content-Type: application/json
 
 {"firstName": "Mi", "lastName": "Aplicación", "description": "React"}

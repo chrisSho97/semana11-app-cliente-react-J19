@@ -34125,21 +34125,21 @@ var App = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement(InstrumentoList, {
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h2", null, "Lista de Instrumentos"), /*#__PURE__*/React.createElement(InstrumentoList, {
         instrumentos: this.state.instrumentos
-      });
+      }));
     }
   }]);
   return App;
 }(React.Component);
-var EmployeeList = /*#__PURE__*/function (_React$Component2) {
-  _inherits(EmployeeList, _React$Component2);
-  var _super2 = _createSuper(EmployeeList);
-  function EmployeeList() {
-    _classCallCheck(this, EmployeeList);
+var InstrumentoList = /*#__PURE__*/function (_React$Component2) {
+  _inherits(InstrumentoList, _React$Component2);
+  var _super2 = _createSuper(InstrumentoList);
+  function InstrumentoList() {
+    _classCallCheck(this, InstrumentoList);
     return _super2.apply(this, arguments);
   }
-  _createClass(EmployeeList, [{
+  _createClass(InstrumentoList, [{
     key: "render",
     value: function render() {
       var instrumentos = this.props.instrumentos.map(function (instrumento) {
@@ -34148,10 +34148,10 @@ var EmployeeList = /*#__PURE__*/function (_React$Component2) {
           instrumento: instrumento
         });
       });
-      return /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("tbody", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Nombre"), /*#__PURE__*/React.createElement("th", null, "Categoria"), /*#__PURE__*/React.createElement("th", null, "Descripcion")), employees));
+      return /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("tbody", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", null, "Nombre"), /*#__PURE__*/React.createElement("th", null, "Categor\xEDa"), /*#__PURE__*/React.createElement("th", null, "Descripci\xF3n")), instrumentos));
     }
   }]);
-  return EmployeeList;
+  return InstrumentoList;
 }(React.Component);
 var Instrumento = /*#__PURE__*/function (_React$Component3) {
   _inherits(Instrumento, _React$Component3);
