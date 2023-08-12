@@ -41164,7 +41164,7 @@ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 var _require = __webpack_require__(/*! react */ "./node_modules/react/index.js"),
   useState = _require.useState;
 var _require2 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js"),
-  link = _require2.link;
+  Link = _require2.Link;
 var client = __webpack_require__(/*! ../client */ "./src/main/js/client.js");
 var NuevoMusicoPage = function NuevoMusicoPage() {
   var _useState = useState(''),
@@ -41180,13 +41180,13 @@ var NuevoMusicoPage = function NuevoMusicoPage() {
         nombre: nombre
       },
       headers: {
-        'content-type': 'application/json'
+        'Content-Type': 'application/json'
       }
     }).done(function () {
       window.location = '/';
     });
   };
-  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Nuevo Musico"), /*#__PURE__*/React.createElement(Form, {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h1", null, "Nuevo M\xFAsico"), /*#__PURE__*/React.createElement("form", {
     onSubmit: handleSubmit
   }, /*#__PURE__*/React.createElement("label", null, "Nombre"), " ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("input", {
     type: "text",
@@ -41197,8 +41197,8 @@ var NuevoMusicoPage = function NuevoMusicoPage() {
     }
   }), " ", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("input", {
     type: "submit",
-    value: "Nuevo Musico"
-  })), /*#__PURE__*/React.createElement("link", {
+    value: "Nuevo M\xFAsico"
+  })), /*#__PURE__*/React.createElement(Link, {
     to: "/"
   }, "Volver"));
 };
